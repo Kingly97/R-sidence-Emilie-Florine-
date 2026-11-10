@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résidence Emilie Florine | Appartements Meublés & Salles de Réception à Brazzaville</title>
+    <meta name="description" content="Location d'appartements meublés de standing et salles de banquet à Brazzaville (Batignolles / Maya-Maya). À 10 min du centre-ville.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo-link">
+                <!-- EMPLACEMENT LOGO -->
+                <img src="images/logo.png" alt="Résidence Emilie Florine" class="logo-img" onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='block';">
+                <div id="logo-fallback" class="logo-fallback" style="display:none;">
+                    EMILIE <span class="gold-text">FLORINE</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                    <li><a href="#appartements" class="nav-link">Appartements Meublés</a></li>
+                    <li><a href="#salles" class="nav-link">Salles de Réception</a></li>
+                    <li><a href="#localisation" class="nav-link">Localisation</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <a href="https://wa.me/242067933469?text=Bonjour,%20je%20souhaite%20réserver%20un%20appartement%20ou%20une%20salle%20à%20la%20Résidence%20Emilie%20Florine." target="_blank" class="btn-whatsapp-nav">
+                    <span>Réserver sur WhatsApp</span>
+                </a>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">Avenue des 3 Martyrs • Maya-Maya, Brazzaville</div>
+            <h1>Votre Confort à Proximité de l'Aéroport</h1>
+            <p class="hero-subtitle">Appartements meublés de haut standing & Salles de banquet pour vos grands événements à 10 minutes du centre-ville.</p>
+            <div class="hero-buttons">
+                <a href="#appartements" class="btn btn-primary">Découvrir nos hébergements</a>
+                <a href="#salles" class="btn btn-outline">Nos Salles de Fêtes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Appartements Meublés -->
+    <section id="appartements" class="section bg-dark">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title">Hébergements Privilégiés</span>
+                <h2>Nos Appartements Meublés</h2>
+                <div class="gold-line center"></div>
+                <p class="section-desc">Des espaces modernes comprenant chambre, salon, cuisine équipée et salle de bain privée pour vos séjours à Brazzaville.</p>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Carte Appartement 1 -->
+                <div class="card">
+                    <div class="card-img-box">
+                        <img src="images/appt-1.jpg" alt="Appartement meublé Standing" onerror="this.src='https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80'">
+                        <span class="card-badge">Chambre + Salon</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Appartement Executive</h3>
+                        <p class="card-text">Idéal pour vos voyages d'affaires ou séjours prolongés. Entièrement meublé avec climatisation et cuisine équipée.</p>
+                        <ul class="specs-list">
+                            <li><span>🛏️ Literie :</span> <span>Grand lit King Size</span></li>
+                            <li><span>❄️ Confort :</span> <span>Climatisation Glaciale</span></li>
+                            <li><span>🍳 Cuisine :</span> <span>Équipée complète</span></li>
+                            <li><span>📍 Situation :</span> <span>Proche Aéroport</span></li>
+                        </ul>
+                        <button onclick="reserverService('Appartement Executive')" class="btn-card-wa">
+                            Réserver via WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Carte Appartement 2 -->
+                <div class="card">
+                    <div class="card-img-box">
+                        <img src="images/appt-2.jpg" alt="Appartement meublé Premium" onerror="this.src='https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80'">
+                        <span class="card-badge">Famille / Long Séjour</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Appartement Familial Premium</h3>
+                        <p class="card-text">Espace généreux et raffiné comprenant plusieurs chambres et salles d'eau pour un confort absolu.</p>
+                        <ul class="specs-list">
+                            <li><span>🛏️ Pièces :</span> <span>2 Chambres + Salon</span></li>
+                            <li><span>🚿 Douches :</span> <span>2 Salles d'eau</span></li>
+                            <li><span>🛡️ Sécurité :</span> <span>Gardiennage 24h/24</span></li>
+                            <li><span>🚗 Parking :</span> <span>Sécurisé gratuit</span></li>
+                        </ul>
+                        <button onclick="reserverService('Appartement Familial Premium')" class="btn-card-wa">
+                            Réserver via WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Salles de Réception & Fêtes -->
+    <section id="salles" class="section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title">Événements & Banquets</span>
+                <h2>Nos 2 Salles de Fêtes</h2>
+                <div class="gold-line center"></div>
+                <p class="section-desc">Organisez vos mariages, réceptions, anniversaires ou séminaires d'entreprise dans un cadre élégant et accessible.</p>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Salle 1 -->
+                <div class="card">
+                    <div class="card-img-box">
+                        <img src="images/salle-1.jpg" alt="Grande Salle de Banquet" onerror="this.src='https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80'">
+                        <span class="card-badge gold">Grande Réception</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Salle de Banquet Prestige</h3>
+                        <p class="card-text">Grande salle climatisée modulable, parfaite pour accueillir vos invités d'honneur lors de mariages et banquets.</p>
+                        <button onclick="reserverService('Salle de Banquet Prestige')" class="btn-card-wa">
+                            Demander la disponibilité
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Salle 2 -->
+                <div class="card">
+                    <div class="card-img-box">
+                        <img src="images/salle-2.jpg" alt="Salle de Réception Privée" onerror="this.src='https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=800&q=80'">
+                        <span class="card-badge gold">Événement Privé</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Salle de Réception Intimiste</h3>
+                        <p class="card-text">Idéale pour vos réunions professionnelles, anniversaires ou fêtes privées nécessitant un cadre chaleureux.</p>
+                        <button onclick="reserverService('Salle de Réception Intimiste')" class="btn-card-wa">
+                            Demander la disponibilité
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Localisation -->
+    <section id="localisation" class="section bg-dark">
+        <div class="container location-box">
+            <div class="location-text">
+                <span class="sub-title">Emplacement Stratégique</span>
+                <h2>Au Coeur de Brazzaville</h2>
+                <div class="gold-line"></div>
+                <p>La <strong>Résidence Emilie Florine</strong> bénéficie d'une situation idéale à proximité immédiate de l'aéroport international Maya-Maya et à seulement 10 minutes du centre-ville.</p>
+                
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div>
+                        <h4>Adresse exacte</h4>
+                        <p>1597 Avenue des Trois Martyrs, Batignolles, Maya-Maya, Brazzaville, Congo.</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">🛬</div>
+                    <div>
+                        <h4>Proximité</h4>
+                        <p>À 5 min de l'Aéroport Maya-Maya • 10 min du Centre-Ville</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="location-map">
+                <!-- Carte iframe Google Maps centrée sur Maya-Maya / Batignolles -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15914.887854617838!2d15.2450!3d-4.2520!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a32d665796a5d%3A0x4460f48a1d7f1c10!2sA%C3%A9roport%20International%20Maya-Maya!5e0!3m2!1sfr!2scg!4v1700000000000!5m2!1sfr!2scg" width="100%" height="350" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <div class="footer-logo">EMILIE <span class="gold-text">FLORINE</span></div>
+                <p>Résidence hôtelière & Salles de réceptions privées à Brazzaville.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Direct</h4>
+                <p>💬 WhatsApp : +242 06 793 34 69</p>
+                <p>📍 1597 Av. des Trois Martyrs, Batignolles</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span id="year"></span> Résidence Emilie Florine. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
+```
